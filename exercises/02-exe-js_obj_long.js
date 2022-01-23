@@ -35,7 +35,6 @@ const book3 = {
 }
 
 library[0].books.push(book3);
-console.log(library[0]);
 
 //Bonus Iteration
 const user2 = {
@@ -46,4 +45,8 @@ const user2 = {
 
 library.push(user2);
 
-for(let i=0;)
+library.forEach((user)=>{
+    user.books.forEach((book)=>{
+        console.log(book)
+    })
+});
